@@ -133,7 +133,7 @@ minor modes that is usually displayed directly in the mode line."
   (let ((recursive-edit-help-echo "Recursive edit, type C-M-c to get out"))
     (list (propertize "%[" 'help-echo recursive-edit-help-echo)
           '(:eval (car minions-mode-line-delimiters))
-          `(:propertize ("" mode-name)
+          `(:propertize 
                         help-echo "Major mode
 mouse-1: Display major mode menu
 mouse-2: Show help for major mode
